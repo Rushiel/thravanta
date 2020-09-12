@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thrivanta</title>
+
+    <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+     
+     <!---------------------JavaScript Codes---------------------------->
+
+             <script type="text/javascript">
+
+         function myFunction(){
+            var name=prompt("Hey There! What is your name?", "James");
+
+            var msg;
+            var date= new Date();
+            var hour=date.getHours();
+            
+            if (hour<12){
+                msg="Hello "+name+" Good Morning";
+                document.getElementById("namesec").innerHTML=msg;
+
+            }
+            else if (hour>12 && hour<16){
+                msg="Hello "+name+" Good Afternoon";
+                document.getElementById("namesec").innerHTML=msg;
+            }
+            else if(hour>16 && hour<23){
+                msg="Hello "+name+" Good Evening";
+                document.getElementById("namesec").innerHTML=msg;
+            }
+            else{
+                msg="greetings of the day";
+                document.getElementById("namesec").innerHTML=msg;
+
+            }
+            
+            document.body.style.backgroundColor=bg;
+
+        }
+
+    </script>     
+
+    <!---------------------------CSS--------------------------------->
+
+    <style type="text/css">
+    
+
+    </style>
+</head>
+<body onload="myFunction()">
+
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud">
+    <div class="title-text">
+      <h1 id="namesec"></h1>
+    </div>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
+    <img class="mountain" src="images/mountain.png" alt="mountain-img">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images/Alex.png" alt="Alex.png">
+      <h2>Hello.</h2>
+      <p class="intro">I am Alex and I have many Pharmacy products for you at the lowest of prices!</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="code-img" src="https://www.primaseller.com/wp-content/uploads/2019/09/Dynamic-pricing.jpg" alt="pricing-png">
+
+        <h3>Pricing</h3>
+        <p>I can price items on basis of your budget! I was made by Rushiel for Thrivanta so that the customers remain happy. </p>
+
+      </div>
+      <div class="skill-row">
+        <img class="chilli-img" src="images/trophy.png" alt="trophhy-img">
+
+        <h3>Business</h3>
+        <p>But my best skill is actually in business. I can grow the business from a fruit shop to a millionare estate! I have been working for Thrivanta since 2011.</p>
+
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Buy</h2>
+      <h3>If you want to buy medicines</h3>
+      <p class="contact-message">Wannna buy medicines for your friends/family? Then lets set the price and buy the products!</p>
+      <a class="btn" href="https://www.amazon.com">BUY</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="microsoft.com/user/Rushiel"></a>
+    <a class="footer-link" href="https://github.com/Rushiel">Github</a>
+    <a class="footer-link" href="https://rushiel.github.io/Gacha-life">Website</a>
+    <p class="copyright">© 2020 Rushiel Menon @ Thrivanta.</p>
+  </div>
+</body>
+
+</html>
+
+
+</body>
+</html>
